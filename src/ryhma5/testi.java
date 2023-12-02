@@ -29,6 +29,25 @@ class Kannykka {
 	String merkki;
 	String os;
 	boolean paalla;	
+	
+	// Muodostimet / Constructor
+	
+		// oletusmuodostin
+		public Kannykka()
+		{
+			merkki="";
+			os="";
+			paalla=false;
+		}
+		
+		// parametrinen muodostin
+		public Kannykka(String m, String o, boolean p)
+		{
+			merkki=m;
+			os=o;
+			paalla=p;
+		}
+		
 	//toiminnallisuudet
 	public void Kaynnisty() {
 		System.out.println("Puhelin on käynnistetty");
