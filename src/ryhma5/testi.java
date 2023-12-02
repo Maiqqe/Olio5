@@ -28,13 +28,26 @@ class Kannykka {
 	//ominaisuudet
 	String merkki;
 	String os;
-		
+	boolean paalla;	
 	//toiminnallisuudet
 	public void Kaynnisty() {
 		System.out.println("Puhelin on käynnistetty");
+		paalla = true;
 	}
 	
 	public void soitaPuhelu(String puhelinNumero) {
+		if (paalla==true)
 		System.out.println("Soittaa numeroon " + puhelinNumero);
 	}
+	//tulostaa tietoja puhelimesta.
+    public void tulostaTietoja()
+	{
+		System.out.println("*** Olion tietoja ***");
+		System.out.println("Merkki: ");
+		System.out.println("Käyttöjärjestelmä: " + os);
+	}
+
+
+
+
 }
