@@ -19,6 +19,8 @@ public class testi {
 		System.out.println("Olion tietoja");
 		System.out.println("Käyttöjärjestelmä: " + puhelin2.os);
 		
+		Kannykka puhelin3 = new Kannykka ("Nokia", "Android", false);
+		puhelin3.tulostaTietoja();
 	}
 
 }// Main-luokan lopetus
@@ -62,7 +64,7 @@ class Kannykka {
     public void tulostaTietoja()
 	{
 		System.out.println("*** Olion tietoja ***");
-		System.out.println("Merkki: ");
+		System.out.println("Merkki: " + merkki);
 		System.out.println("Käyttöjärjestelmä: " + os);
 	}
 
